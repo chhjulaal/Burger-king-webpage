@@ -1,0 +1,669 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  background-image: url("bg-.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+header::after {
+  content: "Get Cashback up to 50%";
+  width: 40vw;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-weight: 600;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+header::before {
+  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, odit corporis et molestiae rerum eius dolores quas aperiam  vero!lorem molestiae rerum eius dolores";
+  width: 565px;
+  position: absolute;
+  top: 68%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-size: x-large;
+  filter: opacity(0.9);
+  left: 418px;
+}
+.animate__backInDown ::before {
+  margin: 0 0.5rem;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+.btn {
+  padding: 15px;
+  width: 280px;
+  position: absolute;
+  left: 130px;
+  bottom: 35px;
+  border-radius: 25px;
+  font-size: medium;
+  font-weight: 600;
+  color: #eee6e6;
+  background-color: #f81e00;
+  border: none;
+  filter: opacity(0.9);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px; /* Adjust size as needed */
+  height: auto;
+  margin: 10px 48px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0px;
+}
+
+li {
+  margin-right: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  padding: 0px 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+a:hover {
+  color: #ff8725;
+}
+.animate__backInDown {
+  /* display: inline-bloc; */
+  margin: 0 0.5rem;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+/* section 0 started */
+.s0 {
+  text-align: center;
+  height: 100vh;
+  padding-top: 10px;
+}
+.s0::before {
+  content: "";
+  width: 20vw;
+  height: 2px;
+  color: #ff5733;
+  background-color: #ddd;
+  position: absolute;
+  bottom: -112px;
+  left: 40%;
+}
+.s0 h1 {
+  font-size: 65px;
+  margin: 26px 0px 0px 0px;
+}
+.s0 .mp {
+  width: 60%;
+  position: relative;
+  margin: 20px auto;
+}
+.s0 p {
+  text-align: center;
+  position: relative;
+  /* left: 25%; */
+  margin: 25px 0px;
+}
+.chef-div {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 90px 0px;
+  flex-wrap: wrap;
+}
+.one-div img {
+  height: 40vh;
+  border-radius: 50%;
+}
+
+/* section 1 started */
+.bu {
+  position: relative;
+  top: -15px;
+  color: white;
+  background-color: white;
+  opacity: 0.7;
+  margin: 0px 20px;
+  border-radius: 10px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 100vw;
+  margin: 20px;
+  background-color: transparent;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.menu-item {
+  width: 40vw;
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.menu-item img {
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.menu-item-details {
+  flex: 1;
+}
+
+.menu-item-details h2 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+.menu-item-details p {
+  margin: 5px 0;
+  color: white;
+}
+
+.menu-item-price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ff5733;
+}
+.btn-card {
+  color: white;
+  background-color: #f81e00;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 4px 0px;
+}
+/* Video section styles */
+
+.video-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sp-manu-btn {
+  display: none;
+}
+.content-overlay h1 {
+  font-size: 36px;
+}
+
+/* section 3 started */
+.s2 {
+  height: 100vh;
+  background-color: #f81e00;
+  color: white;
+  opacity: 0.8;
+}
+.s2 h1 {
+  font-size: 48px;
+  position: relative;
+  top: 10vh;
+  color: white;
+}
+.s2 .s2-p {
+  text-align: center;
+  margin: auto;
+  width: 70vw;
+  position: relative;
+  top: 11vh;
+  font-size: 2.7vh;
+}
+.s2 p {
+  text-align: center;
+  margin-top: -10px;
+  position: relative;
+  top: 30%;
+  font-size: 3vh;
+  font-weight: 800;
+}
+.no-1-div {
+  display: flex;
+  margin: 12vh 0;
+}
+.no-1 {
+  width: 20vw;
+  border: 2px solid white;
+  margin: 60px 28px;
+  height: 27vh;
+  padding: 42px 0px;
+  border-radius: 50%;
+  position: relative;
+  left: 13%;
+}
+.s2 #k {
+  text-align: center;
+  font-weight: 700;
+  font-size: 10vh;
+  margin: 0;
+  position: relative;
+  top: 20%;
+}
+
+/* section 3 */
+.s3 {
+  height: 100vh;
+  background-color: bisque;
+}
+.card-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: 44vh;
+  text-align: center;
+  background-color: #ffffff;
+  color: #f81e00;
+  margin: 5vh;
+  /* border: #f81e00 1px solid; */
+  padding: 20px;
+}
+
+.card-div .card span img {
+  height: 26vh;
+}
+
+.card-div .card button {
+  width: 95%;
+  padding: 12px;
+  background-color: #f81e00;
+  color: #ffffff;
+  border-radius: 20px;
+  border: 0px;
+}
+.s3 .popular-card {
+  font-size: 8vh;
+  color: #f81e00;
+  /* margin-bottom: 1vh; */
+  margin: 0px 0px 50px 0px;
+  position: relative;
+  top: 5%;
+}
+.last-img-div {
+  margin-top: 7vh;
+}
+#last-img {
+  /* position: relative;
+    left: 0%; */
+  width: -webkit-fill-available;
+}
+.last-img-div p {
+  font-size: 1.9vh;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer-bottom {
+  text-align: center;
+}
+#fu {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  height: 10vh;
+  border-top: 2px solid #464644;
+  padding: 20px 0px 0px 0px;
+  margin: 32px 40px 0px 40px;
+}
+#fu span img {
+  margin: 0px 0.5vw;
+}
+
+@media only screen and (min-width: 340px) and (max-width: 767px) {
+  header {
+    background-color: #333;
+    color: #fff;
+    background-image: url("bg-.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  header::after {
+    content: "Get Cashback up to 50%";
+    font-size: -webkit-xxx-large;
+    font-weight: 600;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  header::before {
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, odit corporis et molestiae rerum eius dolores quas aperiam vero!lorem molestiae rerum eius dolores";
+    width: 78vw;
+    position: absolute;
+    top: 68%;
+    left: 46vw;
+    transform: translate(-50%, -50%);
+    font-size: 2.4vh;
+    filter: opacity(0.9);
+  }
+  .animate__backInDown ::before {
+    margin: 0 0.5rem;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    /* animation-duration: 2s; */
+  }
+  .btn {
+    filter: opacity(0.9);
+    padding: 15px;
+    width: 90vw;
+    position: absolute;
+    left: 10px;
+    bottom: 65px;
+    border-radius: 25px;
+    font-size: medium;
+    font-weight: 600;
+    color: #eee6e6;
+    background-color: #f81e00;
+    border: none;
+    filter: opacity(0.9);
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo img {
+    height: auto;
+    width: 60px;
+    height: auto;
+    margin: 10px 8px;
+  }
+
+  #ul {
+    background-color: coral;
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 1000;
+  }
+
+  .sp-manu-btn {
+    display: inline;
+    font-size: 9.2vh;
+  }
+
+  li {
+    margin-right: 40px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    padding: 0px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 4.4vh;
+  }
+  a:active {
+    color: white;
+  }
+  /* .logo::after {
+    content: "REAL TASTE";
+    position: absolute;
+    top: 4%;
+    color: #ffffffff fff;
+    left: 32%;
+    font-size: 3vh;
+    font-weight: 900;
+    filter: brightness(0.5);
+  } */
+  /* section s0 start  */
+  .s0 {
+    text-align: center;
+    height: 100vh;
+    padding-top: 10px;
+  }
+  .s0::before {
+    content: "";
+    width: 20vw;
+    height: 2px;
+    color: #ff5733;
+    background-color: #ddd;
+    position: absolute;
+    bottom: -112px;
+    left: 40%;
+  }
+  .s0 h1 {
+    font-size: 65px;
+    margin: 26px 0px 0px 0px;
+  }
+  .s0 .mp {
+    width: 80vw;
+    position: relative;
+    margin: 20px auto;
+    margin-bottom: -53px;
+  }
+  .s0 p {
+    text-align: center;
+    position: relative;
+    /* left: 25%; */
+    margin: 25px 0px;
+  }
+  .chef-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 90px 0px;
+    flex-wrap: wrap;
+  }
+  .one-div img {
+    height: 50vw;
+    border-radius: 50%;
+  }
+  /* section s0 end */
+  /* section s1 start */
+  .bu {
+  position: relative;
+  top: -15px;
+  color: white;
+  background-color: white;
+  opacity: 0.7;
+  margin: 0px 20px;
+  border-radius: 10px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 100vw;
+  margin: 20px;
+  background-color: transparent;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.menu-item {
+  width: 40vw;
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.menu-item img {
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.menu-item-details {
+  flex: 1;
+}
+
+.menu-item-details h2 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+.menu-item-details p {
+  margin: 5px 0;
+  color: white;
+}
+
+.menu-item-price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ff5733;
+}
+.btn-card {
+  color: white;
+  background-color: #f81e00;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 4px 0px;
+}
+/* Video section styles */
+
+.video-section {
+  display: none;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sp-manu-btn {
+  display: flex;
+}
+
+/* .content-overlay h1 {
+  font-size: 36px;
+} */
+
+  /* section s1 end */
+
+
+}
+
+/* Styles for iPhones */
+/* @media only screen and (min-device-width: 375px){} */
+
+/* Styles for iPads */
+ @media only screen and (min-width: 768px) and (max-width: 5024px){ 
+  #x{
+    display: none!important;
+  }
+} 
+
+/* @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+} */
+
+/* Styles for large screens */
+/* @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+} */
+
+/* Media Query Start*/
+
+/* Styles for screens between 768px and 991px */
+/* @media (min-width: 768px) and (max-width: 991px) {
+
+}
+/* Styles for screens larger than 992px */
+/* @media (min-width: 992px) {
+
+}  */
